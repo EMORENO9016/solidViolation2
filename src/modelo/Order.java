@@ -1,3 +1,4 @@
+// Clase que maneja la información de la orden
 package modelo;
 
 public class Order {
@@ -19,7 +20,7 @@ public class Order {
         return amount;
     }
 
-    // Método para generar el reporte
+    // Generación del reporte
     public String generateOrderReport() {
         return "Report for Order ID: " + orderId + " with amount: " + amount;
     }
