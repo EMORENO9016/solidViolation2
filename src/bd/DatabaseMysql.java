@@ -1,10 +1,11 @@
 package bd;
 
-public class DatabaseMysql {
+import modelo.Order;
 
-    public void guardar() {
-        System.out.println("Creo conexion a la base de datos");
-        System.out.println("Guarde en la base de datos");
-        //Abril estuvo aca otra vez :)
+public class DatabaseMysql implements Database {
+    @Override
+    public void guardar(Order order) {
+        System.out.println("Saving Order ID: " + order.getOrderId() + " in MySQL database");
+        // Aquí va la lógica para guardar la orden en la base de datos MySQL
     }
 }
